@@ -4,6 +4,7 @@ import dot from "../images/vector.png";
 import component1 from "../images/component1.png";
 import component2 from "../images/component2.png";
 import SupportedNFTs from "./supportedNFTs";
+import Footer from "./footer";
 
 export default function LandingPage() {
   const Logo = logo;
@@ -51,6 +52,7 @@ export default function LandingPage() {
       <div>
         <SupportedNFTs />
       </div>
+      <Footer />
     </div>
   );
 }

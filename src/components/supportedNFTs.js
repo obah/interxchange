@@ -14,19 +14,19 @@ export default function SupportedNFTs() {
   //for cards populate after figma is complete, for now use whats available
   const cardItems = [
     {
-      imageSrc: () => require("./images/cryptopunks.png"),
+      imageSrc: () => require("../images/cryptopunks.png"),
       heading: "CrptoPunks",
       body: "CryptoPunks launched as a fixed set of 10,000...",
       pageUrl: "",
     },
     {
-      imageSrc: () => require("./images/toshies.png"),
+      imageSrc: () => require("../images/toshies.png"),
       heading: "TOSHIES",
       body: "Step into the pixelated world of Toshi...",
       pageUrl: "",
     },
     {
-      imageSrc: () => require("./images/sewerPass.png"),
+      imageSrc: () => require("../images/sewerPass.png"),
       heading: "Sewer Pass",
       body: "A Sewer Pass grants access to Yuga Labs' Dookey...",
       pageUrl: "",
@@ -69,7 +69,7 @@ export default function SupportedNFTs() {
           pageUrl={items.pageUrl}
         />
       ))}
-      <button>load more</button>
+      <button className="lm-btn">load more</button>
     </div>
   );
 }

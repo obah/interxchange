@@ -64,6 +64,7 @@
   top: 1762px;
 
   border: 3px solid #ffffff;
+  border-radius: 22px;
   background: #000000;
   transform: rotate(90deg);
 }
@@ -75,6 +76,25 @@
   top: 1762px;
 
   border: 3px solid #ffffff;
+  border-radius: 22px;
   background: #000000;
   transform: rotate(90deg);
+}
+
+.lm-btn {
+  width: 234px;
+  height: 80px;
+  left: 615px;
+  top: 2668px;
+
+  background: #fff278;
+  border-radius: 60px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 92%;
+  text-align: center;
+  text-transform: lowercase;
 }
