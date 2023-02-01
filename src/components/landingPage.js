@@ -33,7 +33,9 @@ export default function LandingPage() {
           your assets.
         </p>
       </div>
-      <button className="launch-btn">Launch App</button>
+      <a href="/dashboard">
+        <button className="launch-btn">Launch App</button>
+      </a>
       <div>
         <p className="extra-text">
           Start experiencing the future of token borrowing with InterXchange.

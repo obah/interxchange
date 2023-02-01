@@ -12,26 +12,26 @@ export default function SupportedNFTs() {
   const filterOptions = [{ label: "", value: "" }];
 
   //for cards populate after figma is complete, for now use whats available
-  const cardItems = [
-    {
-      imageSrc: () => require("../images/cryptopunks.png"),
-      heading: "CrptoPunks",
-      body: "CryptoPunks launched as a fixed set of 10,000...",
-      pageUrl: "",
-    },
-    {
-      imageSrc: () => require("../images/toshies.png"),
-      heading: "TOSHIES",
-      body: "Step into the pixelated world of Toshi...",
-      pageUrl: "",
-    },
-    {
-      imageSrc: () => require("../images/sewerPass.png"),
-      heading: "Sewer Pass",
-      body: "A Sewer Pass grants access to Yuga Labs' Dookey...",
-      pageUrl: "",
-    },
-  ];
+  // const cardItems = [
+  //   {
+  //     imageSrc: () => require("../images/cryptopunks.png"),
+  //     heading: "CrptoPunks",
+  //     body: "CryptoPunks launched as a fixed set of 10,000...",
+  //     pageUrl: "",
+  //   },
+  //   {
+  //     imageSrc: () => require("../images/toshies.png"),
+  //     heading: "TOSHIES",
+  //     body: "Step into the pixelated world of Toshi...",
+  //     pageUrl: "",
+  //   },
+  //   {
+  //     imageSrc: () => require("../images/sewerPass.png"),
+  //     heading: "Sewer Pass",
+  //     body: "A Sewer Pass grants access to Yuga Labs' Dookey...",
+  //     pageUrl: "",
+  //   },
+  // ];
 
   const handleChainChange = (e) => {
     setChain(e.target.value);
@@ -61,14 +61,32 @@ export default function SupportedNFTs() {
           onChange={handleFilterChange}
         />
       </div>
-      {cardItems.map((items) => (
+      {/* {cardItems.map((items) => (
         <Card
           image={items.imageSrc()}
           heading={items.heading}
           body={items.body}
           pageUrl={items.pageUrl}
         />
-      ))}
+      ))} */}
+      <Card
+        image={require("../images/cryptopunks.png")}
+        heading={"CrptoPunks"}
+        body={"CryptoPunks launched as a fixed set of 10,000..."}
+        pageUrl={"/"}
+      />
+      <Card
+        image={require("../images/toshies.png")}
+        heading={"TOSHIES"}
+        body={"Step into the pixelated world of Toshi..."}
+        pageUrl={"/"}
+      />
+      <Card
+        image={require("../images/sewerPass.png")}
+        heading={"Sewer Pass"}
+        body={"A Sewer Pass grants access to Yuga Labs' Dookey..."}
+        pageUrl={"/"}
+      />
       <button className="lm-btn">load more</button>
     </div>
   );
