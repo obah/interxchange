@@ -1,12 +1,16 @@
+import "../styles/header.css";
+
 export default function Header() {
   return (
     <>
-      <a href="/">
-        <h1 className="header">InterXchange</h1>
-      </a>
-      <button className="connect-btn">connect wallet</button>
-      <nav className="menu">
-        <ul>
+      <div className="top-section">
+        <a href="/">
+          <h1 className="header">InterXchange</h1>
+        </a>
+        <button className="connect-btn">connect wallet</button>
+      </div>
+      <nav>
+        <ul className="menu">
           <li className="menu-item">
             <a href="/dashboard">Dashboard</a>
           </li>

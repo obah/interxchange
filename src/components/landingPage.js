@@ -5,6 +5,7 @@ import component1 from "../images/component1.png";
 import component2 from "../images/component2.png";
 import SupportedNFTs from "./supportedNFTs";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   const Logo = logo;
@@ -33,9 +34,9 @@ export default function LandingPage() {
           your assets.
         </p>
       </div>
-      <a href="/dashboard">
+      <Link to="dashboard">
         <button className="launch-btn">Launch App</button>
-      </a>
+      </Link>
       <div>
         <p className="extra-text">
           Start experiencing the future of token borrowing with InterXchange.

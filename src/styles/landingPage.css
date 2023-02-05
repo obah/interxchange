@@ -94,6 +94,15 @@ body {
   border-radius: 60px;
 }
 
+.launch-btn:hover {
+  background: #0c1021;
+  color: #fff278;
+}
+
+.launch-btn:focus {
+  background: #ffffff;
+}
+
 .extra-text {
   position: absolute;
   width: 885px;
