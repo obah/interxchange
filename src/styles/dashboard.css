@@ -306,8 +306,15 @@ td {
 }
 
 /* supply */
+/* .supply-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(12, 16, 33, 0.907);
+} */
 
 .supply-container {
+  position: absolute;
   width: 1156px;
   height: 683px;
   left: 142px;
@@ -315,17 +322,16 @@ td {
 
   border: 1px solid #ffffff;
   border-radius: 40px;
-}
-
-.supply-header {
-  border-bottom: 1px solid #525252;
+  background-color: rgba(12, 16, 33, 0.948);
+  z-index: 2;
 }
 
 .supply-header p {
+  position: absolute;
   width: 102px;
   height: 50px;
-  left: 663px;
-  top: 519px;
+  left: 530px; /*133*/
+  top: 9px; /*510*/
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -335,24 +341,27 @@ td {
 }
 
 .supply-header button {
+  position: absolute;
   width: 19px;
   height: 0px;
-  left: 214px;
-  top: 537px;
+  left: 81px;
+  top: 27px;
 }
 
 .supply-body img {
+  position: absolute;
   width: 78px;
   height: 77px;
-  left: 675px;
-  top: 625px;
+  left: 542px;
+  top: 115px;
 }
 
 .supply-name {
+  position: absolute;
   width: 53px;
   height: 44px;
-  left: 688px;
-  top: 709px;
+  left: 555px;
+  top: 199px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -362,10 +371,11 @@ td {
 }
 
 .supply-confirm {
+  position: absolute;
   width: 384px;
   height: 53px;
-  left: 522px;
-  top: 799px;
+  left: 389px;
+  top: 287px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -375,10 +385,11 @@ td {
 }
 
 .supply-body button {
+  position: absolute;
   width: 139px;
   height: 41px;
-  left: 644px;
-  top: 916px;
+  left: 511px;
+  top: 406px;
 
   background: #fff278;
   border-radius: 60px;
@@ -387,6 +398,7 @@ td {
 /* claim */
 
 .claim-container {
+  position: absolute;
   width: 1156px;
   height: 683px;
   left: 142px;
@@ -394,24 +406,24 @@ td {
 
   border: 1px solid #ffffff;
   border-radius: 40px;
-}
-
-.claim-header {
-  border-bottom: 1px solid #525252;
+  background-color: rgba(12, 16, 33, 0.948);
+  z-index: 2;
 }
 
 .claim-header button {
+  position: absolute;
   width: 19px;
   height: 0px;
-  left: 214px;
-  top: 537px;
+  left: 81px;
+  top: 27px;
 }
 
 .ct-1 {
+  position: absolute;
   width: 79px;
   height: 50px;
-  left: 686px;
-  top: 519px;
+  left: 552px;
+  top: 9px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -421,10 +433,11 @@ td {
 }
 
 .ct-2 {
+  position: absolute;
   width: 120px;
   height: 44px;
-  left: 1126px;
-  top: 519px;
+  left: 993px;
+  top: 9px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -434,10 +447,11 @@ td {
 }
 
 .ct-3 {
+  position: absolute;
   width: 53px;
   height: 44px;
-  left: 335px;
-  top: 799px;
+  left: 202px;
+  top: 289px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -447,10 +461,11 @@ td {
 }
 
 .ct-4 {
+  position: absolute;
   width: 100px;
   height: 44px;
-  left: 514px;
-  top: 712px;
+  left: 381px;
+  top: 202px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -460,10 +475,11 @@ td {
 }
 
 .ct-5 {
+  position: absolute;
   width: 66px;
   height: 50px;
-  left: 514px;
-  top: 742px;
+  left: 381px;
+  top: 232px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -473,10 +489,11 @@ td {
 }
 
 .ct-6 {
+  position: absolute;
   width: 100px;
   height: 44px;
-  left: 668px;
-  top: 712px;
+  left: 535px;
+  top: 202px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -486,10 +503,11 @@ td {
 }
 
 .ct-7 {
+  position: absolute;
   width: 104px;
   height: 50px;
-  left: 668px;
-  top: 742px;
+  left: 535px;
+  top: 232px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -502,8 +520,8 @@ td {
   position: absolute;
   width: 100px;
   height: 44px;
-  left: 822px;
-  top: 712px;
+  left: 689px;
+  top: 202px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -513,10 +531,11 @@ td {
 }
 
 .ct-9 {
+  position: absolute;
   width: 65px;
   height: 50px;
-  left: 822px;
-  top: 742px;
+  left: 689px;
+  top: 232px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -526,10 +545,11 @@ td {
 }
 
 .ct-10 {
+  position: absolute;
   width: 142px;
   height: 44px;
-  left: 976px;
-  top: 712px;
+  left: 843px;
+  top: 202px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -539,10 +559,11 @@ td {
 }
 
 .ct-11 {
+  position: absolute;
   width: 117px;
   height: 50px;
-  left: 976px;
-  top: 742px;
+  left: 843px;
+  top: 232px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -554,10 +575,11 @@ td {
 }
 
 .ct-12 {
+  position: absolute;
   width: 142px;
   height: 44px;
-  left: 514px;
-  top: 815px;
+  left: 381px;
+  top: 305px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -567,10 +589,11 @@ td {
 }
 
 .ct-13 {
+  position: absolute;
   width: 134px;
   height: 50px;
-  left: 514px;
-  top: 845px;
+  left: 381px;
+  top: 335px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -580,10 +603,11 @@ td {
 }
 
 .ct-14 {
+  position: absolute;
   width: 134px;
   height: 44px;
-  left: 680px;
-  top: 815px;
+  left: 547px;
+  top: 305px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -593,10 +617,11 @@ td {
 }
 
 .ct-15 {
+  position: absolute;
   width: 131px;
   height: 50px;
-  left: 680px;
-  top: 845px;
+  left: 547px;
+  top: 335px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -606,38 +631,43 @@ td {
 }
 
 .ci-1 {
+  position: absolute;
   width: 78px;
   height: 77px;
-  left: 322px;
-  top: 715px;
+  left: 189px;
+  top: 225px;
 }
 
 .ci-2 {
+  position: absolute;
   width: 30px;
   height: 30px;
-  left: 476px;
-  top: 750px;
+  left: 343px;
+  top: 270px;
 }
 
 .ci-3 {
+  position: absolute;
   width: 30px;
   height: 30px;
-  left: 630px;
-  top: 750px;
+  left: 497px;
+  top: 270px;
 }
 
 .ci-4 {
+  position: absolute;
   width: 30px;
   height: 30px;
-  left: 940px;
-  top: 750px;
+  left: 807px;
+  top: 270px;
 }
 
 .claim-body button {
+  position: absolute;
   width: 139px;
   height: 41px;
-  left: 644px;
-  top: 1007px;
+  left: 511px;
+  top: 497px;
 
   background: #fff278;
   border-radius: 60px;
@@ -645,6 +675,7 @@ td {
 
 /* borrow */
 .borrow-container {
+  position: absolute;
   width: 1156px;
   height: 683px;
   left: 142px;
@@ -652,34 +683,29 @@ td {
 
   border: 1px solid #ffffff;
   border-radius: 40px;
-}
-
-.amount-in {
-  border-bottom: 1px solid #525252;
+  background-color: rgba(12, 16, 33, 0.948);
+  z-index: 2;
 }
 
 .borrow-body button {
+  position: absolute;
   width: 139px;
   height: 41px;
-  left: 644px;
-  top: 1007px;
+  left: 511px;
+  top: 497px;
 
   background: #fff278;
   border-radius: 60px;
 }
 
 .borrow-selector {
+  position: absolute;
   width: 277px;
   height: 71px;
-  left: 581px;
-  top: 649px;
+  left: 448px;
+  top: 139px;
 
   border: 2px solid #ffffff;
-
-  width: 78px;
-  height: 50px;
-  left: 636px;
-  top: 661px;
   padding-left: 15px;
 
   font-family: "Space Grotesk";
@@ -693,31 +719,34 @@ td {
 .borrow-selector select {
   width: 44px;
   height: 36.95px;
-  left: 838.95px;
-  top: 661px;
+  left: 705.95px;
+  top: 151px;
 
   background: #fff278;
 }
 
 .bi-1 {
+  position: absolute;
   width: 30px;
   height: 30px;
-  left: 507px;
-  top: 799px;
+  left: 374px;
+  top: 289px;
 }
 
 .bi-2 {
+  position: absolute;
   width: 30px;
   height: 30px;
-  left: 506px;
-  top: 892px;
+  left: 373px;
+  top: 382px;
 }
 
 .b-input {
+  position: absolute;
   width: 20px;
   height: 50px;
-  left: 887px;
-  top: 789px;
+  left: 754px;
+  top: 279px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -727,10 +756,11 @@ td {
 }
 
 .bt-1 {
+  position: absolute;
   width: 104px;
   height: 50px;
-  left: 661px;
-  top: 519px;
+  left: 528px;
+  top: 9px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -740,10 +770,11 @@ td {
 }
 
 .bt-2 {
+  position: absolute;
   width: 120px;
   height: 44px;
-  left: 1126px;
-  top: 519px;
+  left: 993px;
+  top: 9px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -753,10 +784,11 @@ td {
 }
 
 .bt-3 {
+  position: absolute;
   width: 78px;
   height: 50px;
-  left: 545px;
-  top: 791px;
+  left: 412px;
+  top: 281px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -766,10 +798,11 @@ td {
 }
 
 .bt-4 {
+  position: absolute;
   width: 144px;
   height: 50px;
-  left: 763px;
-  top: 813px;
+  left: 630px;
+  top: 303px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -779,10 +812,11 @@ td {
 }
 
 .bt-5 {
+  position: absolute;
   width: 100px;
   height: 44px;
-  left: 544px;
-  top: 854px;
+  left: 411px;
+  top: 344px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -792,10 +826,11 @@ td {
 }
 
 .bt-6 {
+  position: absolute;
   width: 66px;
   height: 50px;
-  left: 544px;
-  top: 884px;
+  left: 411px;
+  top: 374px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -805,10 +840,11 @@ td {
 }
 
 .bt-7 {
+  position: absolute;
   width: 100px;
   height: 44px;
-  left: 664px;
-  top: 854px;
+  left: 531px;
+  top: 344px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -818,10 +854,11 @@ td {
 }
 
 .bt-8 {
+  position: absolute;
   width: 65px;
   height: 50px;
-  left: 664px;
-  top: 884px;
+  left: 521px;
+  top: 374px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -831,10 +868,11 @@ td {
 }
 
 .bt-9 {
+  position: absolute;
   width: 142px;
   height: 44px;
-  left: 778px;
-  top: 854px;
+  left: 645px;
+  top: 344px;
 
   font-family: "Space Grotesk";
   font-style: normal;
@@ -844,10 +882,11 @@ td {
 }
 
 .bt-10 {
+  position: absolute;
   width: 134px;
   height: 50px;
-  left: 778px;
-  top: 884px;
+  left: 645px;
+  top: 374px;
 
   font-family: "Space Grotesk";
   font-style: normal;

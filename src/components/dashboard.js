@@ -61,36 +61,57 @@ export default function Dashboard() {
     setNetwork(e.target.value);
   };
 
-  const handleCloseBtn = () => {};
-
   const handleSupply = () => {};
 
   const handleClaim = () => {};
 
   const handleBorrow = () => {};
 
+  const [openSupplyModal, setOpenSupplyModal] = useState(false);
+  const [openClaimModal, setOpenClaimModal] = useState(false);
+  const [openBorrowModal, setOpenBorrowModal] = useState(false);
+
   const handleSupplyBtn = () => {
+    setOpenSupplyModal(true);
+  };
+  const handleClaimBtn = () => {
+    setOpenClaimModal(true);
+  };
+  const handleBorrowBtn = () => {
+    setOpenBorrowModal(true);
+  };
+
+  const handleCloseBtn = () => {
+    setOpenBorrowModal(false);
+    setOpenClaimModal(false);
+    setOpenSupplyModal(false);
+  };
+
+  //edit the styling and make the zindex 2
+  function SupplyModal() {
     return (
-      <div className="supply-container">
-        <div className="supply-header">
-          <button onClick={handleCloseBtn}>
-            <img src={require("../images/back-arrow.png")} alt="" />
-          </button>
-          <p>Supply</p>
-        </div>
-        <div className="supply-body">
-          <img src={require("../images/bayc.png")} alt="" />
-          <p className="supply-name">BAYC</p>
-          <p className="supply-confirm">
-            Confirm you want to supply the BAYC worth 64.0 ETH as collateral
-          </p>
-          <button onClick={handleSupply}>Supply</button>
+      <div className="supply-background">
+        <div className="supply-container">
+          <div className="supply-header">
+            <button onClick={handleCloseBtn}>
+              <img src={require("../images/back-arrow.png")} alt="" />
+            </button>
+            <p>Supply</p>
+          </div>
+          <div className="supply-body">
+            <img src={require("../images/bayc.png")} alt="" />
+            <p className="supply-name">BAYC</p>
+            <p className="supply-confirm">
+              Confirm you want to supply the BAYC worth 64.0 ETH as collateral
+            </p>
+            <button onClick={handleSupply}>Supply</button>
+          </div>
         </div>
       </div>
     );
-  };
+  }
 
-  const handleClaimBtn = () => {
+  function ClaimModal() {
     return (
       <div className="claim-container">
         <div className="claim-header">
@@ -122,12 +143,12 @@ export default function Dashboard() {
         </div>
       </div>
     );
-  };
+  }
 
-  const handleBorrowBtn = () => {
+  function BorrowModal() {
     return (
       <div className="borrow-container">
-        <div className="borrow-header">
+        <div className="borrow-header1">
           <button onClick={handleCloseBtn}>
             <img src={require("../images/back-arrow.png")} alt="" />
           </button>
@@ -164,7 +185,7 @@ export default function Dashboard() {
         </div>
       </div>
     );
-  };
+  }
 
   return (
     <>
@@ -260,6 +281,9 @@ export default function Dashboard() {
               <button className="button-9">Borrow</button>
             </div>
           </div>
+          {openSupplyModal && <SupplyModal />}
+          {openClaimModal && <ClaimModal />}
+          {openBorrowModal && <BorrowModal />}
         </div>
       </div>
     </>

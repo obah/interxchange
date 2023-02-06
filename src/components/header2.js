@@ -1,13 +1,13 @@
 import "../styles/header.css";
 
-export default function Header2() {
+export default function Header() {
   return (
     <>
       <div className="top-section">
         <a href="/">
           <h1 className="header">InterXchange</h1>
         </a>
-        <button className="connect-btn">0x79B0…4E71</button>
+        <button className="connect-btn">connect wallet</button>
       </div>
       <nav>
         <ul className="menu">
