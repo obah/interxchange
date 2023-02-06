@@ -1,6 +1,6 @@
 import "../styles/header.css";
 
-export default function Header2() {
+export default function Header() {
   return (
     <>
       <div className="top-section">

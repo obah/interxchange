@@ -1,4 +1,5 @@
 import "../styles/header.css";
+import { ConnectButton } from "@web3uikit/web3";
 
 export default function Header() {
   return (
@@ -7,7 +8,8 @@ export default function Header() {
         <a href="/">
           <h1 className="header">InterXchange</h1>
         </a>
-        <button className="connect-btn">connect wallet</button>
+        {/* <button className="connect-btn">connect wallet</button> */}
+        <ConnectButton className="connect-btn" />
       </div>
       <nav>
         <ul className="menu">
