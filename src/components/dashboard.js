@@ -206,19 +206,20 @@ export default function Dashboard() {
             <p className="text-4">Nothing borrowed yet</p>
           )}
         </div>
-        <div className="asset-supply">
-          {/* <p className="text-5">Assets to supply</p> */}
-          <div className="table-1">
-            <img src={AssetSupply} alt="assets to supply" />
-            <button className="button-1" onClick={handleSupplyBtn}>
-              Supply
-            </button>
-            <button className="button-2">Supply</button>
-            <button className="button-3" onClick={handleClaimBtn}>
-              Claim
-            </button>
-          </div>
-          {/* <table>
+        <div className="table-container">
+          <div className="asset-supply">
+            {/* <p className="text-5">Assets to supply</p> */}
+            <div className="table-1">
+              <img src={AssetSupply} alt="assets to supply" />
+              <button className="button-1" onClick={handleSupplyBtn}>
+                Supply
+              </button>
+              <button className="button-2">Supply</button>
+              <button className="button-3" onClick={handleClaimBtn}>
+                Claim
+              </button>
+            </div>
+            {/* <table>
             <tr>
               <th>Assets</th>
               <th>Worth</th>
@@ -240,23 +241,24 @@ export default function Dashboard() {
               );
             })}
           </table> */}
-        </div>
-        <div className="asset-borrow">
-          {/* <p className="text-6">Assets to borrow</p> */}
-          <div className="table-2">
-            <img src={AssetBorrow} alt="Assets to borrow" />
-            <button className="button-4" onClick={handleBorrowBtn}>
-              Borrow
-            </button>
-            <button className="button-5" onClick={handleBorrowBtn}>
-              Borrow
-            </button>
-            <button className="button-6">Borrow</button>
-            <button className="button-7">Borrow</button>
-            <button className="button-8" onClick={handleBorrowBtn}>
-              Borrow
-            </button>
-            <button className="button-9">Borrow</button>
+          </div>
+          <div className="asset-borrow">
+            {/* <p className="text-6">Assets to borrow</p> */}
+            <div className="table-2">
+              <img src={AssetBorrow} alt="Assets to borrow" />
+              <button className="button-4" onClick={handleBorrowBtn}>
+                Borrow
+              </button>
+              <button className="button-5" onClick={handleBorrowBtn}>
+                Borrow
+              </button>
+              <button className="button-6">Borrow</button>
+              <button className="button-7">Borrow</button>
+              <button className="button-8" onClick={handleBorrowBtn}>
+                Borrow
+              </button>
+              <button className="button-9">Borrow</button>
+            </div>
           </div>
         </div>
       </div>

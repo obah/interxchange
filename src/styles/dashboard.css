@@ -179,8 +179,12 @@ td {
   border-bottom: 1px solid #525252;
 } */
 
-.table-1 {
+.table-container {
   position: relative;
+}
+
+.table-1 {
+  position: absolute;
   width: 547.73px;
   height: 452px;
   left: 151px;
@@ -192,7 +196,7 @@ td {
   width: 548px;
   height: 718px;
   left: 746px;
-  top: 779px;
+  top: 509px;
 }
 
 .main-content button {
@@ -206,25 +210,30 @@ td {
 }
 
 .button-1 {
-  float: inherit;
+  position: absolute;
   background: #fff278;
-  left: 580px;
-  top: 924px;
+  left: 420px; /*-149*/
+  top: 140px; /*-782*/
   z-index: 1;
 }
 
 .button-2 {
-  background: #fff278;
-  opacity: 0.37;
+  position: absolute;
+  left: 420px;
+  top: 232px;
+
+  background: #a9a365;
+
+  z-index: 1;
 }
 
 .button-3 {
-  width: 69px;
-  height: 29px;
-  left: 580px;
-  top: 1128px;
+  position: absolute;
+  left: 420px;
+  top: 346px;
 
   background: #ffffff;
+  z-index: 1;
 }
 
 .button-4 {
