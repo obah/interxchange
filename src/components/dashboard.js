@@ -44,6 +44,19 @@ export default function Dashboard() {
   const AssetSupply = assetSupply;
   const AssetBorrow = assetBorrow;
 
+  const [token, setToken] = useState("");
+  const handleTokenChange = (e) => {
+    setToken(e.target.value);
+  };
+  const tokenOptions = [
+    { label: "eth", value: "ETH" },
+    { label: "usdc", value: "USDC" },
+    { label: "usdt", value: "USDT" },
+    { label: "wbtc", value: "WBTC" },
+    { label: "dai", value: "DAI" },
+    { label: "frax", value: "FRAX" },
+  ];
+
   const handleNetworkChain = (e) => {
     setNetwork(e.target.value);
   };
@@ -58,85 +71,98 @@ export default function Dashboard() {
 
   const handleSupplyBtn = () => {
     return (
-      <>
-        <div className="header">
-          <button onClick={handleCloseBtn}></button>
+      <div className="supply-container">
+        <div className="supply-header">
+          <button onClick={handleCloseBtn}>
+            <img src={require("../images/back-arrow.png")} alt="" />
+          </button>
           <p>Supply</p>
         </div>
-        <div className="main-body">
-          <img src="" alt="" />
-          <p>BAYC</p>
-          <p>
+        <div className="supply-body">
+          <img src={require("../images/bayc.png")} alt="" />
+          <p className="supply-name">BAYC</p>
+          <p className="supply-confirm">
             Confirm you want to supply the BAYC worth 64.0 ETH as collateral
           </p>
           <button onClick={handleSupply}>Supply</button>
         </div>
-      </>
+      </div>
     );
   };
 
   const handleClaimBtn = () => {
     return (
-      <>
-        <div className="header">
-          <button onClick={handleCloseBtn}></button>
-          <p>Claim</p>
-          <p>ETH/USDC</p>
+      <div className="claim-container">
+        <div className="claim-header">
+          <button onClick={handleCloseBtn}>
+            <img src={require("../images/back-arrow.png")} alt="" />
+          </button>
+          <p className="ct-1">Claim</p>
+          <p className="ct-2">ETH/USDC</p>
         </div>
-        <div className="main-body">
-          <img src="" alt="" />
-          <p>BAYC</p>
-          <p>Worth</p>
-          <img src="" alt="" />
-          <p>64.9</p>
-          <p>Borrowed</p>
-          <img src="" alt="" />
-          <p>96,000</p>
-          <p>APY</p>
-          <p>7.5%</p>
-          <p>Amount Owed</p>
-          <img src="" alt="" />
-          <p>103,200</p>
-          <p>Duration</p>
-          <p>365 Days</p>
-          <p>Due Duration</p>
-          <p>In 2 days</p>
+        <div className="claim-body">
+          <img src={require("../images/bayc.png")} alt="" className="ci-1" />
+          <p className="ct-3">BAYC</p>
+          <p className="ct-4">Worth</p>
+          <img src={require("../images/eth.png")} alt="" className="ci-2" />
+          <p className="ct-5">64.9</p>
+          <p className="ct-6">Borrowed</p>
+          <img src={require("../images/usdc.png")} alt="" className="ci-3" />
+          <p className="ct-7">96,000</p>
+          <p className="ct-8">APY</p>
+          <p className="ct-9">7.5%</p>
+          <p className="ct-10">Amount Owed</p>
+          <img src={require("../images/usdc.png")} alt="" className="ci-4" />
+          <p className="ct-11">103,200</p>
+          <p className="ct-12">Duration</p>
+          <p className="ct-13">365 Days</p>
+          <p className="ct-14">Due Duration</p>
+          <p className="ct-15">In 2 days</p>
           <button onClick={handleClaim}>Claim</button>
         </div>
-      </>
+      </div>
     );
   };
 
   const handleBorrowBtn = () => {
     return (
-      <>
-        <div className="header">
-          <button onClick={handleCloseBtn}></button>
-          <p>Borrow</p>
-          <p>ETH/USDC</p>
+      <div className="borrow-container">
+        <div className="borrow-header">
+          <button onClick={handleCloseBtn}>
+            <img src={require("../images/back-arrow.png")} alt="" />
+          </button>
+          <p className="bt-1">Borrow</p>
+          <p className="bt-2">ETH/USDC</p>
         </div>
-        <Dropdown />
-        <div className="main-body">
+        <div className="borrow-selector">
+          <Dropdown
+            label={token}
+            value={token}
+            options={tokenOptions}
+            onChange={handleTokenChange}
+          />
+        </div>
+        <div className="borrow-body">
           <div className="amount-in">
-            <img src="" alt="" />
-            <p>USDC</p>
+            <img src={require("../images/usdc.png")} alt="" className="bi-1" />
+            <p className="bt-3">USDC</p>
             <label>
-              <input type="text" />
+              <input type="text" className="b-input" />
             </label>
-            <p>BMax: 106,241.3USDC</p>
+            <p className="bt-4">BMax: 106,241.3USDC</p>
           </div>
           <div className="details">
-            <img src="" alt="" />
-            <p>NFT Worth</p>
-            <p>64.9</p>
-            <p>APY</p>
-            <p>7.5%</p>
-            <p>Duration</p>
-            <p>365 Days</p>
+            <img src={require("../images/eth.png")} alt="" className="bi-2" />
+            <p className="bt-5">NFT Worth</p>
+            <p className="bt-6">64.9</p>
+            <p className="bt-7">APY</p>
+            <p className="bt-8">7.5%</p>
+            <p className="bt-9">Duration</p>
+            <p className="bt-10">365 Days</p>
           </div>
           <button onClick={handleBorrow}>Borrow</button>
         </div>
-      </>
+      </div>
     );
   };
 

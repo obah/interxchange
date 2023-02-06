@@ -2,6 +2,7 @@ import Header from "./header";
 import NetworkSelector from "./networkSelector";
 import Dropdown from "./dropdown";
 import { useState } from "react";
+import "../styles/pool.css";
 
 export default function Pool() {
   const [input1, setInput1] = useState(0);
@@ -34,12 +35,15 @@ export default function Pool() {
       </>
     );
   };
+
   return (
     <>
       <Header />
       <div className="top-part">
         <p>Pools</p>
-        <NetworkSelector />
+        <div className="network-selector1">
+          <NetworkSelector />
+        </div>
       </div>
       <div className="position">
         <button onClick={addPosition}>Add Position +</button>

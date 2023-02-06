@@ -236,3 +236,554 @@ td {
 
 .button-9 {
 }
+
+/* supply */
+
+.supply-container {
+  width: 1156px;
+  height: 683px;
+  left: 142px;
+  top: 488px;
+
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+}
+
+.supply-header {
+  border-bottom: 1px solid #525252;
+}
+
+.supply-header p {
+  width: 102px;
+  height: 50px;
+  left: 663px;
+  top: 519px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.supply-header button {
+  width: 19px;
+  height: 0px;
+  left: 214px;
+  top: 537px;
+}
+
+.supply-body img {
+  width: 78px;
+  height: 77px;
+  left: 675px;
+  top: 625px;
+}
+
+.supply-name {
+  width: 53px;
+  height: 44px;
+  left: 688px;
+  top: 709px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.supply-confirm {
+  width: 384px;
+  height: 53px;
+  left: 522px;
+  top: 799px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 24px;
+}
+
+.supply-body button {
+  width: 139px;
+  height: 41px;
+  left: 644px;
+  top: 916px;
+
+  background: #fff278;
+  border-radius: 60px;
+}
+
+/* claim */
+
+.claim-container {
+  width: 1156px;
+  height: 683px;
+  left: 142px;
+  top: 488px;
+
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+}
+
+.claim-header {
+  border-bottom: 1px solid #525252;
+}
+
+.claim-header button {
+  width: 19px;
+  height: 0px;
+  left: 214px;
+  top: 537px;
+}
+
+.ct-1 {
+  width: 79px;
+  height: 50px;
+  left: 686px;
+  top: 519px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.ct-2 {
+  width: 120px;
+  height: 44px;
+  left: 1126px;
+  top: 519px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-3 {
+  width: 53px;
+  height: 44px;
+  left: 335px;
+  top: 799px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-4 {
+  width: 100px;
+  height: 44px;
+  left: 514px;
+  top: 712px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-5 {
+  width: 66px;
+  height: 50px;
+  left: 514px;
+  top: 742px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.ct-6 {
+  width: 100px;
+  height: 44px;
+  left: 668px;
+  top: 712px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-7 {
+  width: 104px;
+  height: 50px;
+  left: 668px;
+  top: 742px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.ct-8 {
+  position: absolute;
+  width: 100px;
+  height: 44px;
+  left: 822px;
+  top: 712px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-9 {
+  width: 65px;
+  height: 50px;
+  left: 822px;
+  top: 742px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.ct-10 {
+  width: 142px;
+  height: 44px;
+  left: 976px;
+  top: 712px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-11 {
+  width: 117px;
+  height: 50px;
+  left: 976px;
+  top: 742px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+
+  color: #fff278;
+}
+
+.ct-12 {
+  width: 142px;
+  height: 44px;
+  left: 514px;
+  top: 815px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-13 {
+  width: 134px;
+  height: 50px;
+  left: 514px;
+  top: 845px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.ct-14 {
+  width: 134px;
+  height: 44px;
+  left: 680px;
+  top: 815px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.ct-15 {
+  width: 131px;
+  height: 50px;
+  left: 680px;
+  top: 845px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.ci-1 {
+  width: 78px;
+  height: 77px;
+  left: 322px;
+  top: 715px;
+}
+
+.ci-2 {
+  width: 30px;
+  height: 30px;
+  left: 476px;
+  top: 750px;
+}
+
+.ci-3 {
+  width: 30px;
+  height: 30px;
+  left: 630px;
+  top: 750px;
+}
+
+.ci-4 {
+  width: 30px;
+  height: 30px;
+  left: 940px;
+  top: 750px;
+}
+
+.claim-body button {
+  width: 139px;
+  height: 41px;
+  left: 644px;
+  top: 1007px;
+
+  background: #fff278;
+  border-radius: 60px;
+}
+
+/* borrow */
+.borrow-container {
+  width: 1156px;
+  height: 683px;
+  left: 142px;
+  top: 488px;
+
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+}
+
+.amount-in {
+  border-bottom: 1px solid #525252;
+}
+
+.borrow-body button {
+  width: 139px;
+  height: 41px;
+  left: 644px;
+  top: 1007px;
+
+  background: #fff278;
+  border-radius: 60px;
+}
+
+.borrow-selector {
+  width: 277px;
+  height: 71px;
+  left: 581px;
+  top: 649px;
+
+  border: 2px solid #ffffff;
+
+  width: 78px;
+  height: 50px;
+  left: 636px;
+  top: 661px;
+  padding-left: 15px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: left;
+}
+
+.borrow-selector select {
+  width: 44px;
+  height: 36.95px;
+  left: 838.95px;
+  top: 661px;
+
+  background: #fff278;
+}
+
+.bi-1 {
+  width: 30px;
+  height: 30px;
+  left: 507px;
+  top: 799px;
+}
+
+.bi-2 {
+  width: 30px;
+  height: 30px;
+  left: 506px;
+  top: 892px;
+}
+
+.b-input {
+  width: 20px;
+  height: 50px;
+  left: 887px;
+  top: 789px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.bt-1 {
+  width: 104px;
+  height: 50px;
+  left: 661px;
+  top: 519px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.bt-2 {
+  width: 120px;
+  height: 44px;
+  left: 1126px;
+  top: 519px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 50px;
+}
+
+.bt-3 {
+  width: 78px;
+  height: 50px;
+  left: 545px;
+  top: 791px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.bt-4 {
+  width: 144px;
+  height: 50px;
+  left: 763px;
+  top: 813px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.bt-5 {
+  width: 100px;
+  height: 44px;
+  left: 544px;
+  top: 854px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.bt-6 {
+  width: 66px;
+  height: 50px;
+  left: 544px;
+  top: 884px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.bt-7 {
+  width: 100px;
+  height: 44px;
+  left: 664px;
+  top: 854px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.bt-8 {
+  width: 65px;
+  height: 50px;
+  left: 664px;
+  top: 884px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.bt-9 {
+  width: 142px;
+  height: 44px;
+  left: 778px;
+  top: 854px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.bt-10 {
+  width: 134px;
+  height: 50px;
+  left: 778px;
+  top: 884px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
