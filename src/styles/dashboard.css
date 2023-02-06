@@ -207,6 +207,7 @@ td {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
+  transition-duration: 0.4s;
 }
 
 .button-1 {
@@ -215,6 +216,10 @@ td {
   left: 420px; /*-149*/
   top: 140px; /*-782*/
   z-index: 1;
+}
+
+.button-1:hover {
+  background-color: #9b8c07;
 }
 
 .button-2 {
@@ -236,31 +241,68 @@ td {
   z-index: 1;
 }
 
+.button-3:hover {
+  background-color: #9b8c07;
+}
+
 .button-4 {
+  position: absolute;
+  left: 420px;
+  top: 140px;
   background: #fff278;
+  z-index: 1;
+}
+
+.button-4:hover {
+  background-color: #9b8c07;
 }
 
 .button-5 {
+  position: absolute;
+  left: 420px;
+  top: 232px;
   background: #fff278;
+  z-index: 1;
+}
+
+.button-5:hover {
+  background-color: #9b8c07;
 }
 
 .button-6 {
-  background: #fff278;
-  opacity: 0.37;
+  position: absolute;
+  left: 420px;
+  top: 346px; /*784*/
+  background: #a9a365;
+  z-index: 1;
 }
 
 .button-7 {
-  background: #fff278;
-  opacity: 0.37;
+  position: absolute;
+  left: 420px;
+  top: 447px;
+  background: #a9a365;
+  z-index: 1;
 }
 
 .button-8 {
+  position: absolute;
+  left: 420px;
+  top: 539px;
   background: #fff278;
+  z-index: 1;
+}
+
+.button-8:hover {
+  background-color: #9b8c07;
 }
 
 .button-9 {
-  background: #fff278;
-  opacity: 0.37;
+  position: absolute;
+  left: 420px;
+  top: 651px;
+  background: #a9a365;
+  z-index: 1;
 }
 
 /* supply */
