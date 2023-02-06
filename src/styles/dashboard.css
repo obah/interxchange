@@ -169,7 +169,7 @@
   line-height: 50px;
 }
 
-table {
+/* table {
 }
 
 th {
@@ -177,4 +177,62 @@ th {
 
 td {
   border-bottom: 1px solid #525252;
+} */
+
+.table-1 {
+  position: relative;
+  width: 547.73px;
+  height: 452px;
+  left: 151px;
+  top: 509px;
+}
+
+.table-2 {
+  position: absolute;
+  width: 548px;
+  height: 718px;
+  left: 746px;
+  top: 779px;
+}
+
+.main-content button {
+  background: #fff278;
+  border-radius: 60px;
+  width: 79px;
+  height: 39px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.button-1 {
+  position: relative;
+  left: 580px;
+  top: 924px;
+  z-index: 1;
+}
+
+.button-2 {
+}
+
+.button-3 {
+}
+
+.button-4 {
+}
+
+.button-5 {
+}
+
+.button-6 {
+}
+
+.button-7 {
+}
+
+.button-8 {
+}
+
+.button-9 {
 }
