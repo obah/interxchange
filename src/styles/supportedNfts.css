@@ -82,10 +82,11 @@
 }
 
 .lm-btn {
+  position: absolute;
   width: 234px;
   height: 80px;
-  left: 615px;
-  top: 2668px;
+  left: 300px;
+  top: 970px;
 
   background: #fff278;
   border-radius: 60px;
