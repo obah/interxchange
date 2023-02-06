@@ -180,7 +180,7 @@ export default function Dashboard() {
           <p className="apy-text">Net APY</p>
           <p className="amount-2">--</p>
         </div>
-        <div className="network-selector">
+        <div className="dnetwork-selector">
           <Dropdown
             label={"Network:" + network}
             value={network}

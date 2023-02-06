@@ -67,7 +67,7 @@
   color: #fff278;
 }
 
-.network-selector {
+.dnetwork-selector {
   position: absolute;
   width: 396px;
   height: 71px;
@@ -85,7 +85,7 @@
   border: 2px solid #ffffff;
 }
 
-.network-selector select {
+.dnetwork-selector select {
   width: 44px;
   height: 36.95px;
   left: 1283.08px;
@@ -196,7 +196,6 @@ td {
 }
 
 .main-content button {
-  background: #fff278;
   border-radius: 60px;
   width: 79px;
   height: 39px;
@@ -207,34 +206,52 @@ td {
 }
 
 .button-1 {
-  position: relative;
+  float: inherit;
+  background: #fff278;
   left: 580px;
   top: 924px;
   z-index: 1;
 }
 
 .button-2 {
+  background: #fff278;
+  opacity: 0.37;
 }
 
 .button-3 {
+  width: 69px;
+  height: 29px;
+  left: 580px;
+  top: 1128px;
+
+  background: #ffffff;
 }
 
 .button-4 {
+  background: #fff278;
 }
 
 .button-5 {
+  background: #fff278;
 }
 
 .button-6 {
+  background: #fff278;
+  opacity: 0.37;
 }
 
 .button-7 {
+  background: #fff278;
+  opacity: 0.37;
 }
 
 .button-8 {
+  background: #fff278;
 }
 
 .button-9 {
+  background: #fff278;
+  opacity: 0.37;
 }
 
 /* supply */
