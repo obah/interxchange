@@ -1,14 +1,18 @@
-import "../styles/card.css";
-
-export default function Card({ image, heading, body, pageUrl }) {
+function Card({ pageUrl, image, heading, body, btnImg }) {
   return (
-    <div className="card">
-      <a href={pageUrl} key={pageUrl}>
-        <img src={image} alt={heading} className="card-img" />
-        <p className="card-heading">{heading}</p>
-        <p className="card-body">{body}</p>
-        <button className="card-btn"></button>
+    <div>
+      <a href={pageUrl} target="_blank" rel="noopener noreferrer">
+        <img src={image} alt={heading} />
+        <span>
+          <h3>{heading}</h3>
+          <p>{body}</p>
+        </span>
+        <button>
+          <img src={btnImg} alt="" />
+        </button>
       </a>
     </div>
   );
 }
+
+export default Card;

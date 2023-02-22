@@ -2,134 +2,297 @@
 
 body {
   background-color: #0c1021;
-  color: #ffffff;
-  position: relative;
+  max-width: 100vw;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Space Grotesk", Arial;
+  font-style: normal;
 }
 
 .container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.heading {
-  position: absolute;
-  width: 456px;
-  height: 61px;
-  left: 98px;
-  top: 85px;
-
-  font-family: "Space Grotesk";
-  font-style: normal;
+header {
+  margin: 85px auto auto 100px;
   font-weight: 700;
   font-size: 66px;
-  line-height: 35%;
-
-  text-align: center;
-  text-transform: capitalize;
 }
 
-.logo {
-  position: absolute;
-  width: 316px;
-  height: 330px;
-  left: 183px;
-  top: 319px;
-  z-index: 2;
+/* ======================= TOP SECTION =============================== */
+
+.bodyTop {
+  display: flex;
+  margin: 100px 100px 100px 100px; /*TODO Work here*/
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.vectors {
+/* TODO Browse on making responsive images in plain css*/
+.heroImg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.logoImg {
   position: absolute;
-  width: 537px;
-  height: 505.82px;
-  left: 98px;
-  top: 271px;
+  top: 15%;
+  left: 20%;
   z-index: 1;
+  width: auto;
+  height: auto;
 }
 
-.side-text h2 {
-  position: absolute;
-  width: 560px;
-  height: 61px;
-  left: 740px;
-  top: 289px;
+.dotsImg {
+  width: auto;
+  height: auto;
+}
 
-  font-family: "Space Grotesk";
-  font-style: normal;
+.intro {
+  width: 50%;
+}
+
+.intro1 {
   font-weight: 700;
   font-size: 45px;
   line-height: 57px;
 }
 
-.side-text p {
-  position: absolute;
-  width: 520px;
-  height: 272px;
-  left: 740px;
-  top: 372px;
-
-  font-family: "Space Grotesk";
-  font-style: normal;
+.intro2 {
   font-weight: 400;
   font-size: 24px;
-  line-height: 133%;
+  line-height: 32px;
 }
 
-.launch-btn {
-  position: absolute;
+.bodyTop button {
+  background: #fff276;
+  border-radius: 60px;
   width: 234px;
   height: 80px;
-  left: 740px;
-  top: 695px;
-
   font-family: "Space Grotesk";
-  font-style: normal;
   font-weight: 700;
   font-size: 25px;
-  line-height: 92%;
-
-  text-align: center;
-  text-transform: capitalize;
-
-  background: #fff278;
-  border-radius: 60px;
+  margin-top: 10%;
 }
 
-.launch-btn:hover {
-  background: #0c1021;
-  color: #fff278;
+.bodyTop button:hover,
+.bodyTop button:focus {
+  background: transparent;
+  color: #fff276;
+  cursor: pointer;
 }
 
-.launch-btn:focus {
-  background: #ffffff;
+/* ======================= MID SECTION =============================== */
+
+.bodyMid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 167px;
+  margin-bottom: 80px;
 }
 
-.extra-text {
-  position: absolute;
-  width: 885px;
-  height: 65px;
-  left: 290px;
-  top: 1041px;
-
-  font-family: "Space Grotesk";
-  font-style: normal;
+.midText {
   font-weight: 700;
   font-size: 41px;
   line-height: 52px;
   text-align: center;
+  width: 50%;
 }
 
-.component1 {
-  position: absolute;
-  width: 999.53px;
-  height: 201.06px;
-  left: -206px;
-  top: 1217px;
+.midImg1 {
+  /* object-fit: contain; */
+  width: 100vw;
+  height: 97.45px;
+  margin-bottom: 5px;
 }
 
-.component2 {
+.midImg2 {
+  /* object-fit: contain; */
+  width: 100vw;
+  height: 97.45px;
+  margin-top: 5px;
+}
+
+/* ======================= LAST SECTION =============================== */
+
+.bodyLast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0px auto;
+  width: 862px;
+}
+
+.lastText {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+}
+
+.nftSelector {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: left;
+  display: flex;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.nftSelector label {
+  border: 2px solid #ffffff;
+  width: 392px;
+  height: 71px;
+  margin-right: 12px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-right: -150px;
+  box-sizing: border-box;
+}
+
+.nftSelector:last-child {
+  margin-right: 0;
+}
+
+.nftSelector select {
+  width: 44px;
+  height: 43px;
+  border-radius: 25px;
+  border: 0;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+
+  background: url("../images/arrow2.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-color: #000;
+  color: transparent;
+
+  cursor: pointer;
+}
+
+.nftSelector select::-ms-expand {
+  display: none;
+}
+
+.nftSelector::after {
+  background: #fff;
+}
+
+.nftSelector:hover::after {
+  color: #fff276;
+}
+
+/* ======================= CARDS =============================== */
+.card div {
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  margin-bottom: 2%;
+  height: 224px;
+  width: 797px;
+  position: relative;
+}
+
+.card img {
+  display: inline;
+}
+
+.card a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+.card a:hover {
+  cursor: pointer;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 52px;
+  margin-bottom: 1%;
+  width: 368px;
+  height: 49px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  width: 368px;
+  height: 59px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card button {
+  background: #fff278;
+  width: 75px;
+  height: 75px;
+  border-radius: 45px;
+  border-color: transparent;
   position: absolute;
-  width: 999.53px;
-  height: 201.06px;
-  left: 737px;
-  top: 1217px;
+  left: 95%;
+  top: 30%;
+}
+
+.card button:hover,
+.card button:focus {
+  cursor: pointer;
+}
+
+.lastButton {
+  background: #fff276;
+  border-radius: 60px;
+  width: 234px;
+  height: 80px;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 60px;
+}
+
+.lastButton:hover,
+.lastButton:focus {
+  background: transparent;
+  color: #fff276;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+
+  margin-top: 170px;
+  background: #f5f5f5;
+  height: 493px;
+  width: 100vw;
+}
+
+.footerImg1 {
+  position: absolute;
+  top: 15%;
+  left: 28%;
+}
+
+.footerImg2 {
+  position: absolute;
+  top: 62%;
+  left: 27.5%;
 }
