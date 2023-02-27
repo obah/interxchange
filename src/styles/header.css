@@ -1,83 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+/* =================================MENU===================================== */
 
-.header {
-  display: inline-block;
-  left: 120px;
-  top: 85px;
-  margin-left: 70px;
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 
-  font-family: "Space Grotesk";
-  font-style: normal;
+.top a {
   font-weight: 700;
   font-size: 66px;
-
-  width: 456px;
-  height: 61px;
-}
-
-.connect-btn {
-  display: inline-block;
-  position: absolute;
-  left: 1050px;
-  top: 45px;
-  width: 234px;
-  height: 80px;
-
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 23px;
-  color: #ffffff;
-
-  background: #0c1021;
-  border: 2px solid #ffffff;
-  border-radius: 60px;
-}
-
-.top-section a {
   text-decoration: none;
+  margin-left: 80px;
 }
 
-.top-section a:link,
-.top-section a:visited {
+.top a:link,
+.top a:visited {
   color: #ffffff;
 }
 
-.top-section a:hover {
+.top a:hover,
+.top a:focus {
+  cursor: pointer;
   color: #fff278;
 }
 
-.top-section a:active {
+.top a:active {
   color: #ffffff;
 }
+
+.top button {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  background: #0c1021;
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+  width: 234px;
+  height: 80px;
+  margin-right: 41px;
+}
+
+.top button:hover {
+  cursor: pointer;
+  color: #fff278;
+  border-color: #fff278;
+}
+
+/* =================================MENU===================================== */
 
 .menu {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-
-  font-family: "Space Grotesk";
-  font-style: normal;
   font-weight: 700;
   font-size: 38px;
-
-  list-style-type: none;
+  margin-top: 50px;
+  margin-right: 30px;
 }
 
 .menu a {
   text-decoration: none;
 }
 
-.menu-item a:link,
-.menu-item a:visited {
-  color: #d6d3d3;
+.menuItems {
+  list-style-type: none;
 }
 
-.menu-item a:hover {
+.menuItems a:link,
+.menuItems a:visited {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.menuItems a:hover {
   color: #fff278;
 }
 
-.menu-item a:active {
-  color: #ffffff;
+.menuItems a:active {
+  color: rgba(255, 255, 255, 0.64);
 }
+
+/* .current {
+  text-decoration: underline;
+  color: red;
+} */
